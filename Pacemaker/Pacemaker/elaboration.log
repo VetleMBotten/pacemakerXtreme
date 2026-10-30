@@ -1,4 +1,4 @@
-Active-HDL 17.0.292.10043 2026-10-30 11:23:27
+Active-HDL 17.0.292.10043 2026-10-30 13:46:00
 
 Elaboration top modules:
 Verilog Module                d_flipflop
@@ -17,3 +17,9 @@ Library                 | Comment
 ----------------------------------------------------------------------------------------------
 Pacemaker               | None
 ----------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +w_nets +m +w_nets d_flipflop
+
+
+The performance of simulation is reduced. Version Student Edition

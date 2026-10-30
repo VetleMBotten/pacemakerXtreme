@@ -40,8 +40,8 @@ REFRESH_FLOW=1
 /d_flipflopwave.awc=-1
 [Files.Data]
 .\src\sr_latch.sv=SystemVerilog Source Code
-.\src\d_latch.sv=Verilog Source Code
-.\src\d_flipflop.sv=Verilog Source Code
+.\src\d_latch.sv=SystemVerilog Source Code
+.\src\d_flipflop.sv=SystemVerilog Source Code
 .\src\d_flipflopwave.asdb=Accelerated Waveform File
 .\src\d_flipflopwave.awc=Accelerated Waveform Configuration
 [LocalVerilogSets]
