@@ -1,0 +1,48 @@
+timestamp=1793355552087
+
+[~A]
+LastVerilogToplevel=d_flipflop
+ModifyID=4
+Version=74
+c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflop.v=0*4670*5198
+c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_latch.v=0*1706*2199
+c:/My_Designs/pacemakerXtreme/Pacemaker/src/sr_latch.sv=0*373*788
+
+[~MFT]
+0=6|0Pacemaker.mgf|5198|1065
+1=4|1Pacemaker.mgf|5722|2865
+3=8|3Pacemaker.mgf|1657|856
+
+[$root]
+A/$root=22|||1*5348
+BinW64/$root=3*1338
+SLP=3*1453
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|c73a565f2ade592f8ac1c68f484c921682a93491430b1df71e166890a2099171
+
+[d_flipflop]
+A/d_flipflop=22|../src/d_flipflop.v|1|1*5722
+BinW64/d_flipflop=3*1537
+R=../src/d_flipflop.v|1
+SLP=3*1657
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|f14304628f560a9a8ef9c3ab23ec6f75aa828d11cf2094224bc54945fa492735038cc749a6fcdd114f8028140c0fa848
+
+[d_latch]
+A/d_latch=22|../src/d_latch.v|1|1*1782
+BinW64/d_latch=3*641
+R=../src/d_latch.v|1
+SLP=3*758
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|b6e7b07832bc3d2c0bb54ca7091454f326527262ddaa47cb266f3a3c4d9b973a8af7fc3711aa0a5471dfdc1c8da871be
+
+[sr_latch]
+A/sr_latch=22|../src/sr_latch.sv|1|1*374
+BinW64/sr_latch=3*199
+R=../src/sr_latch.sv|1
+SLP=3*317
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|9186e68bbc6b8131b84c5ec4149ba7fce08d679eaf1bc9de9439630905b37e5f76ec291e47138f01a3db3b468a479e84
+
+[~U]
+$root=12|0*4226|
+d_flipflop=12|0*4424||0x10
+d_latch=12|0*1490||0x10
+sr_latch=12|0*166||0x10
+                                                

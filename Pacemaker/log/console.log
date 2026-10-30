@@ -1,0 +1,130 @@
+# Design: Design Pacemaker already active.
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+alog -O2 -sve -msg 5 -sv2k23 -work Pacemaker $dsn/src/sr_latch.sv
+# Unit top modules: sr_latch.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work Pacemaker $dsn/src/d_latch.v
+# Unit top modules: d_latch.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work Pacemaker $dsn/src/d_flipflop.v
+# Warning: VCP2590 d_flipflop.v : (21, 1): Undefined port S_n in module d_latch.
+# Warning: VCP2590 d_flipflop.v : (22, 1): Undefined port R_n in module d_latch.
+# Warning: VCP2590 d_flipflop.v : (31, 1): Undefined port S_n in module d_latch.
+# Warning: VCP2590 d_flipflop.v : (32, 1): Undefined port R_n in module d_latch.
+# Unit top modules: d_flipflop.
+# Compile success 0 Errors 4 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work Pacemaker $dsn/src/d_flipflop.v
+# Unit top modules: d_flipflop.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +m +w_nets d_flipflop
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.1 [s]
+# SLP: 12 (100.00%) primitives and 0 other processes in SLP
+# SLP: 0 signals in SLP and 30 (93.75%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\pacemakerXtreme\Pacemaker\src\wave.asdb
+#  11:20 AM, Friday, October 30, 2026
+#  Simulation has been initialized
+# add wave -noreg {/d_flipflop/clk_n}
+# add wave -noreg {/d_flipflop/clk_n_n}
+# add wave -noreg {/d_flipflop/Q_i}
+# add wave -noreg {/d_flipflop/Q_i_n}
+# add wave -noreg {/d_flipflop/clk}
+# add wave -noreg {/d_flipflop/D}
+# add wave -noreg {/d_flipflop/S_n}
+# add wave -noreg {/d_flipflop/R_n}
+# add wave -noreg {/d_flipflop/Q}
+# add wave -noreg {/d_flipflop/Q_n}
+# VSIM: 10 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/pacemakerXtreme/Pacemaker/src/wave.asdb'.
+run @600ns
+# KERNEL: stopped at time: 600 ns
+run 600 ns
+# KERNEL: stopped at time: 1200 ns
+run 600 ns
+# KERNEL: stopped at time: 1800 ns
+run 600 ns
+# KERNEL: stopped at time: 2400 ns
+run 600 ns
+# KERNEL: stopped at time: 3 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 12 (100.00%) primitives and 0 other processes in SLP
+# SLP: 0 signals in SLP and 30 (93.75%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\pacemakerXtreme\Pacemaker\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  11:23 AM, Friday, October 30, 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/pacemakerXtreme/Pacemaker/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @600ns
+# KERNEL: stopped at time: 600 ns
+# Waveform file 'c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflopwave.awc' connected to 'c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflopwave.asdb'.
+# Adding file c:\My_Designs\pacemakerXtreme\Pacemaker\src\d_flipflopwave.asdb ... Done
+# Adding file c:\My_Designs\pacemakerXtreme\Pacemaker\src\d_flipflopwave.awc ... Done
+run @1.2us
+# KERNEL: stopped at time: 1200 ns
+run @1.8us
+# KERNEL: stopped at time: 1800 ns
+# Adding file c:\My_Designs\pacemakerXtreme\Pacemaker\src\d_flipflopwave.awc ... Done
+# Exporting waveform [c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflopwave.awc] ...
+# Saving picture c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflopwave0.png (1 of 1).
+# Exporting waveform [c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflopwave.awc] finished.
+# Adding file c:\My_Designs\pacemakerXtreme\Pacemaker\src\d_flipflopwave.awc ... Done
+# Exporting waveform [c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflopwave.awc] ...
+# Saving picture c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflopwave0.png (1 of 1).
+# Exporting waveform [c:/My_Designs/pacemakerXtreme/Pacemaker/src/d_flipflopwave.awc] finished.
+# Adding file c:\My_Designs\pacemakerXtreme\Pacemaker\src\d_flipflopwave.awc ... Done
+endsim
+# VSIM: Simulation has finished.

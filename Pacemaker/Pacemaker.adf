@@ -1,0 +1,70 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Pacemaker
+[Library]
+Pacemaker=.\Pacemaker\Pacemaker.lib
+[$LibMap$]
+Pacemaker=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+WireDelay=2
+AccessACCB=0
+AccessACCR=0
+AccessReadTopLevel=0
+AccessRead=0
+AccessReadWrite=0
+AccessReadWriteSLP=1
+SimulationAccessReadPaths=
+SimulationAccessReadModules=
+SimulationAccessReadWritePaths=
+SimulationAccessReadWriteModules=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=+m +w_nets
+[IMPLEMENTATION]
+UCF=
+[c:\My_Designs\pacemakerXtreme\Pacemaker\Pacemaker.adf]
+REFRESH_FLOW=1
+[Files]
+/sr_latch.sv=-1
+/d_latch.v=-1
+/d_flipflop.v=-1
+/d_flipflop.v=-1
+/d_flipflopwave.asdb=-1
+/d_flipflopwave.awc=-1
+[Files.Data]
+.\src\sr_latch.sv=SystemVerilog Source Code
+.\src\d_latch.v=Verilog Source Code
+.\src\d_flipflop.v=Verilog Source Code
+.\src\d_flipflop.v=Verilog Source Code
+.\src\d_flipflopwave.asdb=Accelerated Waveform File
+.\src\d_flipflopwave.awc=Accelerated Waveform Configuration
+[LocalVerilogSets]
+VerilogLanguage=10
+WarningPrnLevel=1
+OptimizationLevel=2
+ProtectLevel=0
+Strict=0
+VerilogNoSpecify=0
+EnableDebug=0
+ErrorOutputLimit=0
+MonitoringOfEventsUDP=0
+InitialRegsValue=X
+HasInitialRegsValue=0
+EnableSLP=1
+SlpReuseModelEnable=0
+RandomNumberGeneratorSeedType=Default
+RandomNumberGeneratorValueSeed=1
+[verilog]
+timescale/unit=1ps
+timescale/precision=1ps
+check_syntax_only=0
+identifiers_to_uppercase=0
+timescale/enable=0
