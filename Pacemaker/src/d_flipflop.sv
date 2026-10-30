@@ -1,4 +1,5 @@
 //D_flipflop using only inverters and NAND gates. 
+//for simple CMOS implementation
 module d_flipflop(
     input logic clk,
     input logic D,
