@@ -1,3 +1,4 @@
+//D_flipflop using only inverters and NAND gates. 
 module d_flipflop(
     input logic clk,
     input logic D,

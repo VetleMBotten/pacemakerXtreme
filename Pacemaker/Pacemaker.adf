@@ -36,13 +36,11 @@ REFRESH_FLOW=1
 /sr_latch.sv=-1
 /d_latch.v=-1
 /d_flipflop.v=-1
-/d_flipflop.v=-1
 /d_flipflopwave.asdb=-1
 /d_flipflopwave.awc=-1
 [Files.Data]
 .\src\sr_latch.sv=SystemVerilog Source Code
 .\src\d_latch.v=Verilog Source Code
-.\src\d_flipflop.v=Verilog Source Code
 .\src\d_flipflop.v=Verilog Source Code
 .\src\d_flipflopwave.asdb=Accelerated Waveform File
 .\src\d_flipflopwave.awc=Accelerated Waveform Configuration

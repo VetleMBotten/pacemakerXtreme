@@ -8,14 +8,14 @@ Status=Compiled
 [COMPILESTATUS|.\src\d_latch.v]
 FileTimeLow=1983143317
 FileTimeHigh=31287390
-Status=Modified
+Status=Compiled
 [COMPILESTATUS|.\src\d_flipflop.v]
 FileTimeLow=3439469588
 FileTimeHigh=31287383
 Status=Warning
 [COMPILESTATUS|.\src\d_flipflop.v]
-FileTimeLow=447106853
-FileTimeHigh=31287384
+FileTimeLow=3641415867
+FileTimeHigh=31287396
 Status=Compiled
 [COMPILESTATUS|.\src\d_flipflopwave.asdb]
 FileTimeLow=3886652137
