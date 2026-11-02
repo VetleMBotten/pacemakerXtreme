@@ -28,6 +28,7 @@ SimulationAccessReadWritePaths=
 SimulationAccessReadWriteModules=
 SimulationAccessNetsPaths=
 SimulationAccessNetsModules=+m +w_nets
+fileopenfolder=C:\My_Designs\pacemakerTeller\tellerPace\src\pacemakerXtreme\Pacemaker\src
 [IMPLEMENTATION]
 UCF=
 [c:\My_Designs\pacemakerXtreme\Pacemaker\Pacemaker.adf]
@@ -38,12 +39,16 @@ REFRESH_FLOW=1
 /d_flipflop.sv=-1
 /d_flipflopwave.asdb=-1
 /d_flipflopwave.awc=-1
+/counter.sv=-1
+/tb_counter.sv=-1
 [Files.Data]
 .\src\sr_latch.sv=SystemVerilog Source Code
 .\src\d_latch.sv=SystemVerilog Source Code
 .\src\d_flipflop.sv=SystemVerilog Source Code
 .\src\d_flipflopwave.asdb=Accelerated Waveform File
 .\src\d_flipflopwave.awc=Accelerated Waveform Configuration
+.\src\counter.sv=SystemVerilog Source Code
+.\src\tb_counter.sv=Verilog Source Code
 [LocalVerilogSets]
 VerilogLanguage=10
 WarningPrnLevel=1

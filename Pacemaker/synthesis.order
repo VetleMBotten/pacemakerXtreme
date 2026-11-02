@@ -1,3 +1,5 @@
 i<>.\src\sr_latch.sv
 i<>.\src\d_latch.v
 i<>.\src\d_flipflop.v
+i<>.\src\counter.sv
+i<>.\src\tb_counter.sv

@@ -1,12 +1,14 @@
-Active-HDL 17.0.292.10043 2026-10-30 13:46:00
+Active-HDL 17.0.292.10043 2026-11-02 16:41:21
 
 Elaboration top modules:
-Verilog Module                d_flipflop
+Verilog Module                tb_counter
 
 
 ----------------------------------------------------------------------------------------------
 Verilog Module          | Library   | Info | Compiler Version           | Compilation Options
 ----------------------------------------------------------------------------------------------
+tb_counter              | Pacemaker | SVA  | 17.0.292.10043 (Windows64) | -O2 -sv2k23
+counter                 | Pacemaker |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 d_flipflop              | Pacemaker |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 d_latch                 | Pacemaker |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 sr_latch                | Pacemaker |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
@@ -17,9 +19,3 @@ Library                 | Comment
 ----------------------------------------------------------------------------------------------
 Pacemaker               | None
 ----------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +w_nets +m +w_nets d_flipflop
-
-
-The performance of simulation is reduced. Version Student Edition
