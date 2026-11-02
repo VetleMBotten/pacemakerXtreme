@@ -1,0 +1,12 @@
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Pacemaker\src\counter.sv|]
+TemplateId=2
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Pacemaker\src/d_flipflop.sv|]
+TemplateId=2
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Pacemaker\src/d_latch.sv|]
+TemplateId=24
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Pacemaker\src/tb_counter.sv|]
+TemplateId=2
+tab=lu
